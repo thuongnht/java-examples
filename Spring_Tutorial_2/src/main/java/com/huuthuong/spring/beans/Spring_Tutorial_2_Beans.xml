@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="jungle" class="com.huuthuong.spring.Jungle">
+		<property name="largest" ref="elephant"></property>
+		<property name="animals">
+			
+		<map>
+			<entry key="lion" value-ref="lion"></entry>
+			<entry key="elephant" value-ref="elephant"></entry>
+			<entry key="snake" value-ref="snake"></entry>
+		</map>
+		</property>
+		<property name="foods">
+			<props>
+				<prop key="gorillar">banana</prop>
+				<prop key="panda">bamboo</prop>
+				<prop key="snake">anything</prop>
+			</props>
+		</property>
+	</bean>
+	<bean id="elephant" class="com.huuthuong.spring.Animal">
+		<property name="name" value="Minh"></property>
+		<property name="type" value="elephant"></property>
+	</bean>
+	<bean id="snake" class="com.huuthuong.spring.Animal">
+	    <property name="name" value="Phuong"></property>
+		<property name="type" value="snake"></property>
+	</bean>
+	<bean id="lion" class="com.huuthuong.spring.Animal">
+	    <property name="name" value="Thuong"></property>
+		<property name="type" value="lion"></property>
+	</bean>
+</beans>

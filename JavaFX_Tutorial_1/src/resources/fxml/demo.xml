@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" >
+   <children>
+      <Button fx:id="btn" layoutX="14.0" layoutY="65.0" mnemonicParsing="false" onAction="#showOutput" text="click counter" />
+      <Label fx:id="output" layoutX="14.0" layoutY="42.0" text="Label" />
+      <TextField fx:id="input" layoutX="14.0" layoutY="14.0" prefHeight="25.0" prefWidth="277.0" text="www.huuthuong.com"/>
+      <Label fx:id="btnMessage" layoutX="105.0" layoutY="69.0" text="" />
+   </children>
+</AnchorPane>

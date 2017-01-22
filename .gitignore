@@ -1,0 +1,15 @@
+**/target/
+**/build/
+**/out/
+**/.idea/
+**/.git/
+**/.externalToolBuilders/
+
+Servers/
+.metadata
+.recommenders
+mysqldb
+RemoteSystemsTempFiles
+curves-and-surfaces
+
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Group fx:id="rootGroup" onMouseDragged="#mouseDraggedHandler" onMousePressed="#mousePressedHandler" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.huuthuong.projavafx.controllers.StageCoachController">
+   <children>
+      <Rectangle fx:id="blue" arcHeight="50.0" arcWidth="50.0" fill="DODGERBLUE" height="350.0" stroke="BLACK" strokeType="INSIDE" width="250.0" />
+      <VBox fx:id="contentBox" layoutX="30.0" layoutY="20.0" spacing="10.0">
+         <children>
+            <Text fx:id="textStageX" strokeType="OUTSIDE" strokeWidth="0.0" text="X: " textOrigin="TOP" />
+            <Text fx:id="textStageY" layoutX="10.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Y: " textOrigin="TOP" />
+            <Text fx:id="textStageH" layoutX="10.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="H: " textOrigin="TOP" />
+            <Text fx:id="textStageW" strokeType="OUTSIDE" strokeWidth="0.0" text="W: " textOrigin="TOP" />
+            <Text fx:id="textStageF" layoutX="10.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F: " textOrigin="TOP" />
+            <CheckBox fx:id="checkBoxResizable" mnemonicParsing="false" text="Resizable" />
+            <CheckBox fx:id="checkBoxFullscreen" mnemonicParsing="false" text="Fullscreen" />
+            <HBox fx:id="titleBox">
+               <children>
+                  <Label fx:id="titleLabel" text="Title: " />
+                  <TextField fx:id="titleTextField" text="Stage Coach" />
+               </children>
+            </HBox>
+            <Button fx:id="toBackBtn" mnemonicParsing="false" onAction="#toBackEventHandler" text="toBack()" />
+            <Button fx:id="toFrontBtn" mnemonicParsing="false" onAction="#toFrontEventHandler" text="toFront()" />
+            <Button fx:id="closeBtn" mnemonicParsing="false" onAction="#closeEventHandler" text="close()" />
+         </children>
+      </VBox>
+   </children>
+</Group>

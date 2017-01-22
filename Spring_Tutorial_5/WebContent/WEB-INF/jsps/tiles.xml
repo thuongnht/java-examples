@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Base Definition -->
+   <definition name="base-definition"
+       template="/WEB-INF/jsps/templates/layout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/jsps/templates/header.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/jsps/templates/menu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/jsps/templates/footer.jsp" />  
+   </definition>  
+  
+   <!-- Home Page -->
+   <definition name="home" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" />  
+       <put-attribute name="body" value="/WEB-INF/jsps/pages/home.jsp" />  
+   </definition>  
+ 
+   <!-- List Offers Page -->
+   <definition name="listOffers" extends="base-definition">  
+       <put-attribute name="title" value="List Offers" />  
+       <put-attribute name="body" value="/WEB-INF/jsps/pages/listOffers.jsp" />  
+   </definition>  
+       
+   <!-- Create Offer Page -->
+   <definition name="createOffer" extends="base-definition">  
+       <put-attribute name="title" value="Create Offer" />  
+       <put-attribute name="body" value="/WEB-INF/jsps/pages/createOffer.jsp" />  
+   </definition> 
+   
+   <!-- Error Page -->
+   <definition name="error" extends="base-definition">  
+       <put-attribute name="title" value="Error" />  
+       <put-attribute name="body" value="/WEB-INF/jsps/pages/error.jsp" />  
+   </definition>  
+  
+</tiles-definitions>
